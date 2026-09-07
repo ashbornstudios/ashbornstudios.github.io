@@ -544,6 +544,7 @@ section { padding: 120px 48px; position: relative; z-index: 1; }
   <ul class="nav-links">
     <li><a href="#hero">HOME</a></li>
     <li><a href="#works">WORKS</a></li>
+    <li><a href="#clients">CLIENTS</a></li>
     <li><a href="#about">ABOUT</a></li>
     <li><a href="#contact">CONTACT</a></li>
   </ul>
@@ -557,6 +558,7 @@ section { padding: 120px 48px; position: relative; z-index: 1; }
 <div class="mobile-nav" id="mobileNav" role="dialog" aria-label="Mobile navigation">
   <a href="#hero" onclick="closeMobileNav()">HOME</a>
   <a href="#works" onclick="closeMobileNav()">WORKS</a>
+  <a href="#clients" onclick="closeMobileNav()">CLIENTS</a>
   <a href="#about" onclick="closeMobileNav()">ABOUT</a>
   <a href="#contact" onclick="closeMobileNav()">CONTACT</a>
 </div>
@@ -617,6 +619,51 @@ section { padding: 120px 48px; position: relative; z-index: 1; }
     <div class="work-card reveal" data-name="AIRBNB" data-type="VISUAL CAMPAIGN &bull; BRAND FILM" data-video="AIRBNB.mp4" data-poster="posters/airbnb.jpg" data-accent="255,90,95" onclick="selectProject(this)">
       <video autoplay muted loop playsinline poster="posters/airbnb.jpg"><source src="AIRBNB.mp4" type="video/mp4"></video>
       <div class="card-overlay"><span class="card-number">04</span><div class="card-info"><span class="card-title">AIRBNB</span><span class="card-category">VISUAL CAMPAIGN</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTS -->
+<section id="clients" aria-label="Client work — brands and creators ASHBORN produces for">
+  <div class="works-header reveal">
+    <div>
+      <div class="section-label">CLIENT WORK</div>
+      <h2 class="section-title" style="margin-bottom:0;">CLIENTS</h2>
+    </div>
+    <div class="works-count">03 PROJECTS</div>
+  </div>
+
+  <!-- Featured viewer -->
+  <div class="featured-viewer reveal" id="clientViewer">
+    <video id="clientVideo" src="LUX-CINEMATIC.mp4" poster="posters/lux-cinematic.jpg" autoplay muted loop playsinline></video>
+    <div class="featured-label">
+      <span class="project-name" id="clientName">LUX — CINEMATIC</span>
+      <span class="project-type" id="clientType">PRIVATE DRIVING &bull; LOS ANGELES &bull; BRAND FILM</span>
+    </div>
+    <div class="featured-controls">
+      <button class="sound-btn" id="clientSoundBtn" aria-label="Toggle sound">
+        <svg class="icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+        <svg class="icon-unmuted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="display:none"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+      </button>
+      <button class="expand-btn" id="clientExpandBtn" aria-label="Fullscreen">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Client grid -->
+  <div class="works-grid">
+    <div class="work-card active reveal" data-name="LUX — CINEMATIC" data-type="PRIVATE DRIVING &bull; LOS ANGELES &bull; BRAND FILM" data-video="LUX-CINEMATIC.mp4" data-poster="posters/lux-cinematic.jpg" data-accent="212,165,116" onclick="selectClient(this)">
+      <video autoplay muted loop playsinline poster="posters/lux-cinematic.jpg"><source src="LUX-CINEMATIC.mp4" type="video/mp4"></video>
+      <div class="card-overlay"><span class="card-number">01</span><div class="card-info"><span class="card-title">LUX</span><span class="card-category">CINEMATIC FILM</span></div></div>
+    </div>
+    <div class="work-card reveal" data-name="LUX — MINIATURE WORLDS" data-type="SERIALIZED CAMPAIGN &bull; CREATIVE DIRECTION &bull; MOTION" data-video="LUX-MINIATURE.mp4" data-poster="posters/lux-miniature.jpg" data-accent="224,150,90" onclick="selectClient(this)">
+      <video autoplay muted loop playsinline poster="posters/lux-miniature.jpg"><source src="LUX-MINIATURE.mp4" type="video/mp4"></video>
+      <div class="card-overlay"><span class="card-number">02</span><div class="card-info"><span class="card-title">LUX</span><span class="card-category">MINIATURE WORLDS</span></div></div>
+    </div>
+    <div class="work-card reveal" data-name="JONOVA" data-type="VISUAL &bull; MOTION DESIGN" data-video="JONOVA.mp4" data-poster="posters/jonova.jpg" data-accent="150,152,178" onclick="selectClient(this)">
+      <video autoplay muted loop playsinline poster="posters/jonova.jpg"><source src="JONOVA.mp4" type="video/mp4"></video>
+      <div class="card-overlay"><span class="card-number">03</span><div class="card-info"><span class="card-title">JONOVA</span><span class="card-category">VISUAL</span></div></div>
     </div>
   </div>
 </section>
@@ -794,6 +841,38 @@ document.getElementById('expandBtn').addEventListener('click', () => {
 function closeModal() { modal.classList.remove('open'); modalVideo.pause(); modalVideo.src = ''; document.body.style.overflow = ''; }
 modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
 document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeModal(); closeMobileNav(); } });
+
+// ─── Client selection (mirrors works, own featured viewer) ───
+const clientVideo = document.getElementById('clientVideo');
+const clientName = document.getElementById('clientName');
+const clientType = document.getElementById('clientType');
+let clientMuted = true;
+function selectClient(card) {
+  document.querySelectorAll('#clients .work-card').forEach(c => c.classList.remove('active'));
+  card.classList.add('active');
+  clientName.textContent = card.dataset.name;
+  clientType.innerHTML = card.dataset.type;
+  clientVideo.src = card.dataset.video;
+  clientVideo.poster = card.dataset.poster;
+  clientVideo.muted = clientMuted;
+  clientVideo.play();
+  if (card.dataset.accent) setAmbient(card.dataset.accent);
+  document.getElementById('clientViewer').scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+const clientSoundBtn = document.getElementById('clientSoundBtn');
+const cIconMuted = clientSoundBtn.querySelector('.icon-muted');
+const cIconUnmuted = clientSoundBtn.querySelector('.icon-unmuted');
+clientSoundBtn.addEventListener('click', () => {
+  clientMuted = !clientMuted; clientVideo.muted = clientMuted;
+  cIconMuted.style.display = clientMuted ? 'block' : 'none';
+  cIconUnmuted.style.display = clientMuted ? 'none' : 'block';
+});
+document.getElementById('clientExpandBtn').addEventListener('click', () => {
+  document.getElementById('modalName').textContent = clientName.textContent;
+  document.getElementById('modalType').textContent = clientType.textContent;
+  modalVideo.src = clientVideo.src; modalVideo.muted = false; modalVideo.play();
+  modal.classList.add('open'); document.body.style.overflow = 'hidden';
+});
 
 // ─── Scroll reveal ───
 const observer = new IntersectionObserver(entries => {
