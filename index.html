@@ -10,6 +10,21 @@
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="theme-color" content="#0A0A0A">
 
+<!-- Strip tracking params (Instagram/Facebook/Google) from the address bar -->
+<script>
+(function () {
+  try {
+    var url = new URL(window.location.href);
+    var tracking = /^(utm_\w+|fbclid|igshid|igsh|gclid|gbraid|wbraid|msclkid|ttclid|mc_cid|mc_eid|_ga|_gl)$/i;
+    var changed = false;
+    Array.from(url.searchParams.keys()).forEach(function (key) {
+      if (tracking.test(key)) { url.searchParams.delete(key); changed = true; }
+    });
+    if (changed) history.replaceState(history.state, '', url.pathname + url.search + url.hash);
+  } catch (e) {}
+})();
+</script>
+
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ashborn.studio/">
