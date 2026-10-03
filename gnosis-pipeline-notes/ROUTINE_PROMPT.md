@@ -212,6 +212,28 @@ episode's log record, include a `hypothesis` field (the one variable you tested 
 Step 0.4) so next cycle's Analyst can score it, and add the row to the Hypothesis Ledger in
 `LEARNINGS.md`.
 
+## Community kit (added 2026-10-03 — text and existing assets only; steps 1–9 unchanged)
+
+Write `COMMUNITY.md` in the episode folder after step 9. It costs no credits and changes nothing
+about how the video is made. Wilder posts these by hand; stickers can't be added through the API.
+
+1. **Pinned question comment** — one question about the mechanism that a viewer can answer from
+   their own belief, e.g. "Did you think blue eyes had blue pigment?" Under 120 characters, no
+   hashtags, no "follow". Same text for the Reel and the Short.
+2. **Story reshare** — the file to use is the `teaser_15s/` cut this run already builds (it stays
+   unposted on TikTok as before). Give one hook line for the story text, under 60 characters,
+   that does NOT name the subject (the reveal stays in the reel).
+3. **Quiz sticker** — one true/false statement on the episode's mechanism, and the answer, taken
+   from a claim already in `SOURCES.md`.
+4. **Poll (only on runs where the date is a Monday or Thursday, LA time)** — "What should we take
+   apart next?" with two options: the next two unbuilt GREEN topics in `TOPIC_BANK.md`, written as
+   a 1–3 word name each. Wilder reports the winner by adding it to `_pipeline/PRIORITY_NEXT.md`;
+   if that file exists, build its topic first and then delete the file.
+5. **Behind the scenes (optional)** — if the stills contact sheet is clean, note its path as a
+   BTS story asset with a one-line caption. Never the QC sheet with failed frames.
+
+Add a "Community kit" line to the summary listing what's in `COMMUNITY.md`.
+
 ## Summary to Wilder
 Topic built, runtime, shot count, credits used, the weakest shot and your recommendation, and
 anything blocked. Report the YouTube queue result (scheduled_posts id, or the error if it failed).
