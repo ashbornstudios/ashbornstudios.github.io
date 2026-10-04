@@ -32,9 +32,14 @@ performer on Instagram. What worked: vivid colour, cinematic macro, nature, cont
   the edit. Backgrounds stay warm near-black.
 - **D7 Title shape.** "Why is a tiger orange?" / "The colour that isn't there" —
   a question or a paradox, never the animal + "explained".
-- **D8 Instagram first for this content type.** Queue every colour-in-nature episode
-  to BOTH YouTube and Instagram at build time (override the winners-only rule for
-  this series; it is already proven).
+- **D8 Instagram = winners only (revised 2026-10-04).** Every episode goes to YouTube;
+  Instagram gets an episode only after ≥ 48 h on YouTube at or above the channel median
+  in both views and retention. (The original D8 said queue every colour-in-nature episode
+  to both; the horse episode flopped on IG, so that is withdrawn.)
+
+## Removed from Instagram
+- Horse episode — removed by Wilder 2026-10-04, low engagement. Stays on YouTube.
+  Never re-promote.
 
 ## Hypotheses to test next (one per episode)
 1. Animal with warm palette (tiger) vs the cool peacock palette → does warm hold?

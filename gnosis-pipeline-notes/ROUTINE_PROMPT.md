@@ -169,12 +169,19 @@ Midjourney. Do not substitute models. Summary:
    passes — mention that in the summary). If the script fails: record the exact error in
    `EDIT_NOTES.md` and move on — it is idempotent, so the next night's run can safely re-invoke it
    for this episode. Never work around a failure by posting some other way.
-   **Then Instagram (every episode, 2026-09-13):**
-   `node "/home/user/gnosis-lab/_pipeline/queue_youtube.mjs" --platform instagram --episode <epNN>`
-   → confirm `✓ queued REEL → scheduled_posts <id>` (same day, 17:00 LA by default; add `--date`/`--time`
-   to move it). It reuses the YouTube upload and posts the `## Instagram Caption` block from
-   `YOUTUBE_SHORTS.md` (derives one if missing). If @thegnosis_lab is not connected the script says so —
-   record it and move on.
+   **Instagram = WINNERS ONLY (Wilder 2026-10-04 — the horse episode flopped on IG).**
+   Do NOT queue tonight's episode to Instagram. Every episode still gets YouTube; Instagram gets
+   only the proven ones. In Step 0 of every run, after the analytics pull, promote winners:
+   an episode qualifies when it has had **≥ 48 h on YouTube** and sits **at or above the
+   channel median in BOTH views and retention %** in `_pipeline/analytics/latest.json`, and has
+   no Instagram row yet. Promote at most **one** episode per run (the strongest), with
+   `node "/home/user/gnosis-lab/_pipeline/queue_youtube.mjs" --platform instagram --episode <epNN> --date <today> --time 17:00`
+   → confirm `✓ queued REEL → scheduled_posts <id>`. It reuses the YouTube upload and posts the
+   `## Instagram Caption` block from `YOUTUBE_SHORTS.md` (derives one if missing). If
+   `_pipeline/promote_to_instagram.mjs` exists, use it instead of choosing by hand. If nothing
+   qualifies, promote nothing and say "nothing to promote" in the summary. If @thegnosis_lab is
+   not connected the script says so — record it and move on. Never re-promote an episode Wilder
+   removed from Instagram (listed under "Removed from Instagram" in `LEARNINGS.md`).
 
 Caps per night: ~20 image jobs, ~18 video jobs. Kling is ~8.75 credits/clip; check `balance` first
 and note credits used in the summary.
@@ -219,7 +226,7 @@ about how the video is made. Wilder posts these by hand; stickers can't be added
 
 1. **Pinned question comment** — one question about the mechanism that a viewer can answer from
    their own belief, e.g. "Did you think blue eyes had blue pigment?" Under 120 characters, no
-   hashtags, no "follow". Same text for the Reel and the Short.
+   hashtags, no "follow". Use it on the Short now, and on the Reel if the episode is promoted.
 2. **Story reshare** — the file to use is the `teaser_15s/` cut this run already builds (it stays
    unposted on TikTok as before). Give one hook line for the story text, under 60 characters,
    that does NOT name the subject (the reveal stays in the reel).
