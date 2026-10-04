@@ -1,45 +1,49 @@
-# GNOSIS LAB — Tiger: "Hidden in plain orange" — SCRIPT_60s
+# GNOSIS LAB — Tiger: "Hidden in plain orange" — SCRIPT_60s (v2, peacock standard)
 
-Built from the cloud session on 2026-10-04 (stills + clips only). VO, stitch, score bed, SFX,
-watermark, QC-on-render, exports and queue are still to be done by the factory on the Mac / the
-cloud routine, unchanged, from this package.
+v2 (2026-10-04): rebuilt to follow the peacock episode's structure (directive D0). v1 had six
+wide wildlife scenes; the peacock was almost all macro/micro with one full-animal reveal.
 
-- **Hypothesis (one variable):** warm palette (tiger orange) vs the cool peacock palette — does
-  warm hold retention as well?
-- **Accent colour:** tiger orange. Foliage deep muted olive / near-black green; everything else
-  brown, bone, charcoal.
-- **Keyword label (yellow, one per video):** `TWO CONES` on shot 6.
+Built from the cloud session: stills only. VO, clips, stitch, score bed, SFX, watermark,
+render QC, exports and queue are done by the factory, unchanged.
+
+- **Hypothesis (one variable):** warm palette (tiger orange) vs the cool peacock palette, with
+  everything else held to the peacock standard.
+- **Accent colour:** tiger orange. Warm near-black backgrounds; everything else black, bronze,
+  brown, bone.
+- **Keyword label (yellow, one per video):** `TWO CONES` on shot 12.
 - **Reveal rule:** "the tiger" is named only in line 16.
-- **Wilder's shot:** line 13 is the POV run with a handheld shake that follows the tiger's stride.
+- **Deliberate exception:** shot 14 is Wilder's POV run with a handheld shake. Every other shot
+  follows the peacock motion rule: only the light (or air) moves, one slow camera move.
+- **Beat order:** if the peacock's own `SCRIPT_60s.md` places its beats differently (where the
+  colour-vanishes proof lands, how long the macro opening runs), match the peacock's timing and
+  reorder these lines to fit; don't change the shots.
 
-| # | VO line | Shot |
-|---|---------|------|
-| 1 | In the deep green of a forest, something is burning orange. | Amber eye through dark wet leaves |
-| 2 | Orange should be the worst colour a hunter could wear. | Orange flank fur between dark leaves |
-| 3 | To us, it blazes against every leaf. | Full tiger in tall grass, golden light |
-| 4 | To the deer it hunts, it almost isn't there. | **Contrast beat** — same scene in a deer's two-colour vision, tiger nearly invisible |
-| 5 | A deer sees the world with only two kinds of colour cones. | Macro of a chital (spotted deer) eye |
-| 6 | Orange and green fall on the same signal. | Retina cone mosaic — **keyword TWO CONES** |
-| 7 | So the orange coat becomes the colour of the grass. | Tiger crouched in dry grass at deer eye height, coat ≈ grass |
-| 8 | The orange comes from one pigment: pheomelanin. | Tiger hairs under the microscope, orange pigment in the cortex |
-| 9 | Packed into every hair as it grows. | Hair follicle, pigment granules passing into the shaft |
-| 10 | The stripes are its darker twin, eumelanin. | One hair, orange to black along its length |
-| 11 | Every stripe breaks the outline of the body. | Tiger behind vertical grass stalks, stripes merge with them |
-| 12 | Shadows of tall grass, painted onto skin. | Tiger lying in grass, grass shadows across its back |
-| 13 | And when it finally runs… | **POV run, handheld shake** |
-| 14 | …it is already far too close to see. | Low-angle leap out of the grass |
-| 15 | Hidden in plain orange. | Tiger walking toward camera on a misty path (pull-back) |
-| 16 | The tiger. | Reveal — full face portrait, golden rim light |
+| # | VO line | Shot | Act |
+|---|---------|------|-----|
+| 1 | In the dark, something is burning orange. | Amber eye macro through dark leaves | 1 Colour up close |
+| 2 | Orange should be the worst colour a hunter could wear. | Orange meeting a black stripe, macro | 1 |
+| 3 | Up close, every single hair carries it. | White cheek fur meeting orange, whisker bases | 1 |
+| 4 | Light slides across it, and it ignites. | Band of light across the back fur | 1 |
+| 5 | Each tip glows like a filament. | Backlit hair tips, fiery orange | 1 |
+| 6 | And yet in the forest, it almost disappears. | Orange flank seen through dark leaves | 1 |
+| 7 | The orange is one pigment: pheomelanin. | Tiger hairs under the microscope | 2 Mechanism |
+| 8 | Packed into every hair as it grows. | Hair follicle, pigment passing into the shaft | 2 |
+| 9 | Its darker twin, eumelanin, paints the stripes. | Electron micrograph: round orange vs long dark granules | 2 |
+| 10 | Where they meet, the edge is drawn hair by hair. | One hair, orange to black | 2 |
+| 11 | Now look through the eyes of its prey. | Chital (spotted deer) eye macro | 3 Proof |
+| 12 | A deer sees with only two kinds of colour cones. | Retina cone mosaic — **TWO CONES** | 3 |
+| 13 | To them, orange is simply the colour of grass. | Same fur macro in a deer's two-colour vision: orange gone | 3 (colour vanishes, like the backlit brown feather) |
+| 14 | By the time it runs, it's already too close. | **POV run, handheld shake** | 3 |
+| 15 | Hidden in plain orange. | Grass shadows lying across its striped back | Close |
+| 16 | The tiger. | Reveal — full face portrait, golden rim light (one slow pull-back) | Reveal |
 
-Target ≈ 58–62 s at VESPER pace (16 lines × ~3.5 s + 0.16 s gaps).
+Target ≈ 58–62 s at VESPER pace.
 
 ## Accuracy notes (rule A5 — the factory verifies and writes SOURCES.md)
-- Tigers' main prey (deer) are dichromats; orange and green are hard for them to tell apart, so an
-  orange tiger matches green foliage to its prey. Lead: Fennell et al. 2019, *J. R. Soc. Interface*
-  (camouflage and the observer's visual system, tiger/deer example).
-- Ungulate dichromacy: two cone classes (short- and medium/long-wavelength). Lead: Jacobs et al.
-  1994 on deer colour vision.
-- Orange fur = pheomelanin; black stripes = eumelanin; melanocytes in the follicle transfer
-  melanin into the hair as it grows.
-- Chital (spotted deer) is a real principal tiger prey in India — used instead of white-tailed
-  deer for accuracy.
+- Tigers' main prey (deer) are dichromats; to them orange and green are hard to tell apart, so the
+  orange coat matches foliage. Lead: Fennell et al. 2019, *J. R. Soc. Interface*.
+- Ungulate dichromacy: two cone classes. Lead: Jacobs et al. 1994 on deer colour vision.
+- Orange fur = pheomelanin; black = eumelanin; melanocytes in the follicle transfer melanin into
+  the growing hair. Pheomelanin granules are typically smaller and rounder than eumelanin's
+  elongated granules.
+- Chital is a principal tiger prey in India.

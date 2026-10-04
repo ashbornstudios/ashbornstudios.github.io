@@ -12,13 +12,31 @@ performer on Instagram. What worked: vivid colour, cinematic macro, nature, cont
 
 ## ACTIVE DIRECTIVES — v5 (2026-09-30, after EP peacock)
 
+- **D0 THE PEACOCK EPISODE IS THE STANDARD (Wilder 2026-10-04).** Before writing a script,
+  open the peacock episode's folder (`SCRIPT_60s.md`, `JOB_MAP.md`, `EDIT_NOTES.md`) and copy its
+  shape: the same shot mix, beat order, pacing, prompt wording and motion style, with only the
+  subject and accent colour changed. What that means in practice:
+  - **Almost all macro/micro on warm near-black.** The peacock had 14 of 15 shots as extreme
+    macro or microscope views; the whole animal appears **once**, as the final reveal.
+  - **Arc:** the colour up close (≈6 shots) → the mechanism under the microscope (≈5) → the
+    proof that the colour isn't what it seems (the colour vanishes: the brown backlit feather)
+    → the full animal, one slow pull-back, then the name.
+  - **Only the light moves.** Light slides, colour swells with the angle, glints travel along
+    the structure, air stirs the fine fibres; one slow camera move per shot. No animal action
+    except the final reveal (the peacock's train quiver), unless Wilder asks for a specific shot.
+  - **Prompt wording:** "Hyper-realistic extreme macro photograph of … warm near-black
+    background, photoreal specimen macro. The <accent> is the only saturated colour; everything
+    else bronze, brown, black. No illustration, no CGI plastic sheen, no text."
+  - Where D1–D8 disagree with the peacock episode, the peacock wins.
+
 - **D1 Subject = colour in nature.** Every episode is about a colour, a pattern or a
   light effect in a living thing or a natural material. Animals first (tiger, mantis
   shrimp, chameleon, morpho, hummingbird, poison frog, cuttlefish, jewel beetle),
   then minerals and phenomena (opal, bismuth, aurora, bioluminescence).
-- **D2 The contrast beat is mandatory.** One shot in the first 10 s shows the subject
-  with its colour *gone* (backlit, wet, dead, under the wrong light, in the dark),
-  then the reveal. The peacock's brown backlit feather is the reference.
+- **D2 The contrast beat is mandatory.** One shot shows the subject with its colour
+  *gone* (backlit, wet, dead, under the wrong light, through another animal's eyes).
+  Place it where the peacock placed its brown backlit feather (per D0), not at a fixed
+  time.
 - **D3 Three colour acts.** Act 1 dull/near-black with one accent. Act 2 the subject
   at full saturation, macro. Act 3 the mechanism (micro/electron scale) in the same
   palette. No random hue shifts between shots.
@@ -43,8 +61,7 @@ performer on Instagram. What worked: vivid colour, cinematic macro, nature, cont
 
 ## Hypotheses to test next (one per episode)
 1. Animal with warm palette (tiger) vs the cool peacock palette → does warm hold?
-2. Contrast beat at 0–3 s (cold open) vs at 6–10 s.
-3. 12 shots at 6 s vs 15 shots at 5 s (fewer, longer holds).
+(Hold every other variable at the peacock standard while testing one.)
 
 ---
 
